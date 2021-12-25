@@ -1,0 +1,523 @@
+:root{
+    --ff1:'Raleway', sans-serif;
+    --ff2:'Open Sans', sans-serif;
+    --ff3:'Cardo', serif;
+    --brand: #e84545;
+    --cl-dark: #2d3033;
+    --cl-p:#6c7279;
+    --bg-text:#53354a;
+    --bg-ft1:#3a3e64;
+    --bg-ft2:#313454;
+    --icon:#c6cacc;
+    --over-red:rgba(232, 69, 69, 0.9);
+    --over-ban:rgba(43, 46, 74, 0.95);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* common css */
+
+/* font css starts */
+.rale-bold{
+    font-family: var(--ff1);
+    font-size: 700;
+}
+.rale-semi{
+    font-family: var(--ff1);
+    font-size: 600;
+}
+.rale-med{
+    font-family: var(--ff1);
+    font-size: 500;
+}
+.rale-reg{
+    font-family: var(--ff1);
+    font-size: 400;
+}
+.open-bold{
+    font-family: var(--ff2);
+    font-weight: 700;
+}
+.open-semi{
+    font-family: var(--ff2);
+    font-weight: 600;
+}
+.open-med{
+    font-family: var(--ff2);
+    font-weight: 500;
+}
+.open-reg{
+    font-family: var(--ff2);
+    font-weight: 400;
+}
+.cardo-bold{
+    font-family: var(--ff3);
+    font-size: 700px;
+}
+.cardo-bold{
+    font-family: var(--ff3);
+    font-size: 700px;
+}
+.cardo-bold{
+    font-family: var(--ff3);
+    font-size: 700px;
+}
+.cardo-reg{
+    font-family: var(--ff3);
+    font-size: 400px;
+}
+.cardo-reg-ita{
+    font-family: var(--ff3);
+    font-size: 700px;
+}
+/* font css ends */
+
+
+/* typography starts */
+.text-up{
+    text-transform: uppercase;
+}
+.text-cap{
+    text-transform: capitalize;
+}
+.text-center{
+    text-align: center;
+}
+/* typography ends */
+
+
+/* font size starts */
+.fs-13{
+    font-size: 13px;
+}
+.fs-65{
+    font-size: 65px;
+}
+.fs-22{
+    font-size: 22px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-36{
+    font-size: 36px;
+}
+.fs-28{
+    font-size: 28px;
+}
+
+/* font size ends */
+
+/* cta-btn starts */
+.cta-btn {
+    line-height: 46px;
+    display: inline-block;
+}
+/* cta-btn ends */
+
+/* helper color starts */
+.bg-brand{
+    background: var(--brand);
+}
+.white{
+    color: #fff;
+}
+.brand{
+    color: var(--brand);
+}
+.detail{
+    color: var(--cl-p);
+}
+/* helper color ends */
+
+
+nav{
+    height: 100px;
+    position: fixed;
+    inset: 0;
+    z-index: 444;
+    background-color: #313454;
+}
+nav .navbar{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .navbar .logo{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav .navbar .logo img{
+    width: 100%;
+}
+nav .navbar .nav-list{
+    height: 100px;
+    width: 600px;
+}
+nav .navbar .nav-list ul{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .navbar .nav-list ul li a{
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+nav .navbar .nav-list ul li a:hover{
+    color: var(--brand);
+}
+
+/* section starts */
+#banner{
+    height: 750px;
+    background: url(../images/background.jpg) no-repeat center  / cover;
+    position: relative;
+    z-index: 1;
+}
+#banner ::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--over-ban);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+#banner .banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+}
+#banner .banner-text a{
+    line-height: 46px;
+    display: inline-block;
+    padding: 0 52px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+#banner .banner-text a:hover{
+    color: var(--brand);
+    background: #fff;
+}
+#banner .banner-text h1{
+    line-height: 71px;
+    padding: 0 45px;
+    margin-bottom: 20px;
+}
+#banner .banner-text p{
+    line-height: 33px;
+    padding: 0 109px;
+    margin-bottom: 70px;
+}
+/* section ends */
+
+/* service starts */
+#service{
+    height: 450px;
+    padding-top: 120px;
+    margin-bottom: 240px;
+}
+#service .service-main{
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+#service .service-main article{
+    width: 370px;
+    height: 190px;
+    text-align: center;
+}
+#service .service-main article:hover{
+    box-shadow: 10px 10px 10px 0 rgba(58, 62, 100, 0.05);
+}
+#service .service-main article figure p i{
+    font-size: 65px;
+    color:var(--brand);
+    padding-bottom: 34px;
+}
+#service .service-main article h5{
+    padding-bottom: 9px;
+}
+#service .service-main article p{
+    padding: 0 10px;
+}
+/* service ends */
+
+/* image starts */
+#gallery{
+    height: 700px;
+    background: forestgreen;
+    display: flex;
+    flex-wrap: wrap;
+}
+#gallery figure{
+    width: 25%;
+    height: 350px;
+    background: fuchsia;
+    position: relative;
+}
+#gallery figure img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#gallery figure figcaption{
+    width: 100%;
+    height: 100%;
+    background:var(--over-red);
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#gallery figure figcaption:hover{
+    opacity: 1;
+}
+#gallery figure figcaption h6{
+    margin-bottom: 10px;
+
+}
+/* image ends */
+
+/* people comment starts */
+#comment{
+    height: 580px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#comment .people{
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+}
+#comment .people article{
+    width: 270px;
+    height: 580px;
+}
+#comment .people article .image{
+    width: 270px;
+    height: 270px;
+}
+#comment .people article .image img{
+    width: 100%;
+    height: 100%;
+}
+#comment .people article .about-persion h4{
+    margin-bottom: 10px;
+}
+#comment .people article .about-persion p{
+    margin-bottom: 25px;
+}
+#comment .people article .icon{
+    width: 124px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 66px 0;
+}
+#comment .people article .icon ul{
+    display: flex;
+}
+#comment .people article .icon ul li a{
+    display: inline-block;
+    border: 1px solid #c6cacc;
+    padding: 7px 12px;
+    margin: 0 7px;
+    color: #c6cacc;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+} 
+/* people comment ends  */
+
+/* a girl starts */
+#a-girl{
+    height: 500px;
+    background: salmon;
+    display: flex;
+}
+#a-girl figure{
+    height: 500px;
+    width: 50%;
+    background: rgb(205, 169, 90);
+}
+#a-girl figure img{
+    width: 100%;
+    height: 100%;
+}
+#a-girl figcaption{
+    height: 500px;
+    width: 50%;
+    background: #53354a;
+}
+#a-girl figcaption .main{
+    width: 950px;
+    justify-content: space-between;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 85px;
+    padding-top: 115px;
+}
+#a-girl figcaption .main p{
+    line-height: 42px;
+    font-family: 'Cardo', serif;
+    font-style: italic;
+}
+#a-girl figcaption .main h6{
+    padding-top: 30px;
+    padding-bottom: 65px;
+}
+#a-girl figcaption .main ul{
+    display: flex;
+    padding-left: 204px;
+}
+#a-girl figcaption .main ul li{
+    width: 25px;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.301);
+}
+#a-girl figcaption .main ul .active{
+    color: #fff;
+}
+/* a girl ends */
+
+/* download starts */
+#download{
+    height: 340px;
+    text-align: center;
+}
+#download p{
+    margin-bottom: 20px;
+    padding-top: 122px;
+}
+#download h6{
+    margin-bottom: 50px;
+    margin-top: -8px;
+}
+#download .cta-btn a{
+    line-height: 46px;
+    display: inline-block;
+    padding: 0 52px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+#download .cta-btn a:hover{
+    color: var(--brand);
+    background: #fff;
+}
+/* download ends */
+
+/* shear starts */
+#shear{
+    height: 250px;
+    background: #3a3e64;
+}
+#shear .shear-bg{
+    display: flex;
+    height: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+#shear .shear-bg .location{
+    width: 390px;
+    height: 100px;
+}
+#shear .shear-bg .location h5{
+    text-align: center;
+    padding-bottom: 22px;
+}
+#shear .shear-bg .location p{
+    text-align: center;
+    padding: 0 116px;
+}
+#shear .shear-bg .media{
+    width: 390px;
+    height: 100px;
+    text-align: center;
+}
+#shear .shear-bg .media h5{
+    padding-bottom: 15px;
+}
+#shear .shear-bg .media ul{
+    display: flex;
+    justify-content: center;
+    width: 390px;
+    padding-right: 10px;
+}
+#shear .shear-bg .media ul li a {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 7px 12px;
+    margin: 0 2px;
+    color: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+#shear .shear-bg .about{
+    width: 390px;
+    height: 100px;
+}
+#shear .shear-bg .about h5{
+    text-align: center;
+    padding-bottom: 22px;
+}
+#shear .shear-bg .about p{
+    text-align: center;
+    padding: 0 22px;
+}
+/* shear ends */
